@@ -1,0 +1,14 @@
+{
+    "name": "cwolff/sstest",
+    "description": "provides an commandline utility for running a domain against the ssllabs.com/ssltest/ certificate test.",
+    "license": "",
+    "authors": [
+        {
+            "name": "Christian Wolff",
+            "email": "cwolff@aer.de"
+        }
+    ],
+    "require": {
+        "packfire/logger": "~1.0"
+    }
+}
