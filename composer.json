@@ -1,5 +1,5 @@
 {
-    "name": "cwolff/sstest",
+    "name": "wolffc/sstest",
     "description": "provides an commandline utility for running a domain against the ssllabs.com/ssltest/ certificate test.",
     "license": "",
     "authors": [
@@ -9,6 +9,12 @@
         }
     ],
     "require": {
-        "packfire/logger": "~1.0"
+        "packfire/logger": "~1.0",
+        "zendframework/zend-http": "~2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "wolffc\\ssltest\\": "src"
+        }
     }
 }
