@@ -45,4 +45,18 @@ interface TestResponseInterface {
 	 * @return string the letters A+,A,B,C,D,F as Scored by SSL Labs
 	 */
 	public function getRating();
+
+	/**
+	 * convert a given Rating in letter form to a number (higer number means better rating)
+	 * @param  string the letter of an Rating (A,B,C... F);
+	 * @return integer -1 if illigle rating is found (F=0 ... A=5 A+=6)
+	 */
+	public function convertToNummericalRating($LetterRating);
+
+	/**
+	 * Returns true if rating is Higer or Eqal 
+	 * @param  string $letterRating the rating letter A ... F
+	 * @return boolean               if the rating is higher or eqal
+	 */
+	public function ratingIsHigherOrEqual($letterRating);
 }
