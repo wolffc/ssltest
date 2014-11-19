@@ -94,7 +94,11 @@ class TestResponse implements TestResponseInterface {
 
 	public function getRating(){
 		$result = $this->simpleXMLBody->xpath('//div[@id="rating"]/div[2]');
-		return trim($result[0]);
+		if(count($result) ===1){
+			return trim($result[0]);
+		}else{
+			return '- no Rating found';
+		}
 
 	}
 

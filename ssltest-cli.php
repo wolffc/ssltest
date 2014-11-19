@@ -28,7 +28,7 @@ if (array_key_exists('report-file',$options)){
 	file_put_contents($options['report-file'], $testResult->getBody());
 }
 
-echo 'Rating: ' . $testResult->getRating() . PHP_EOL;
+echo PHP_EOL . 'Rating: ' . $testResult->getRating() . PHP_EOL;
 
 if (array_key_exists('minimum-rating',$options)){
 	if($testResult->ratingIsHigherOrEqual($options['minimum-rating'])){
